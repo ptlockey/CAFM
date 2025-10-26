@@ -4,7 +4,7 @@ const config: Config = {
   testEnvironment: "jsdom",
   preset: "ts-jest",
   moduleNameMapper: {
-    "^@/(.*)$": "<rootDir>/$1",
+    "^@/(.*)$": "<rootDir>/src/$1",
     "^uuid$": require.resolve("uuid"),
   },
   setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"],
